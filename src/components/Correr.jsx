@@ -1,11 +1,12 @@
 import React from 'react'
+import Correr1 from '..//images/correr.jpg'
 
-const correr = () => {
+const Correr = () => {
   return (
     <div>
-      
+      <img src={Correr1} alt="Corres en pista" />
     </div>
   )
 }
 
-export default correr
+export default Correr

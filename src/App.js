@@ -1,20 +1,23 @@
 import './App.css';
-import { browserRouter as Router, Router, Router } from 'react-router-dom';
-import Campo from './components/Campo.JSX';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Campo from './components/Campo';
 import Carrera from './components/Carrera';
-import Corredor from './components/corredor';
-import correr from './components/correr';
-import images from './components/images';
+import Corredor from './components/Corredor';
+import Correr from './components/Correr';
+import Images from './components/Images';
+import Navigation from './components/Navigation';
+
 function App() {
   return (
     <Router>
-      <Router>
-        <Router path="/Campo" element={Campo}/>
-        <Router path="/Campo" element={Carrera}/>
-        <Router path="/Campo" element={Corredor}/>
-        <Router path="/Campo" element={correr}/>
-        <Router path="/Campo" element={images}/>
-      </Router>
+      <Routes>
+        <Route path="/Campo" element={Campo}/>
+        <Route path="/Carrera" element={Carrera}/>
+        <Route path="/Corredor" element={Corredor}/>
+        <Route path="/Correr" element={Correr}/>
+        <Route path="/Images" element={Images}/>
+      </Routes>
+      <Navigation />
     </Router>
   );  
 }

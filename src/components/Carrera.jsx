@@ -1,5 +1,5 @@
 import React from 'react'
-import Carrera1 from '../images/carrera.jpg'
+import Carrera1 from '../images/carrera.png'
 
 const Carrera = () => {
   return (
