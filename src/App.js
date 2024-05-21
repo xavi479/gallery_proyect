@@ -7,15 +7,19 @@ import Correr from './components/Correr';
 import Images from './components/Images';
 import Navigation from './components/Navigation';
 
+
 function App() {
-  return (
+  return  (
     <Router>
+      <div className='container'>
+        <h1 id='title' className='text-center my-3'>Galería</h1>
+      </div>
       <Routes>
-        <Route path="/Campo" element={Campo}/>
-        <Route path="/Carrera" element={Carrera}/>
-        <Route path="/Corredor" element={Corredor}/>
-        <Route path="/Correr" element={Correr}/>
-        <Route path="/Images" element={Images}/>
+        <Route path="/Campo" element={<Campo className= "imagen-size" />}/>
+        <Route path="/Carrera" element={<Carrera className="imagen-size" />}/>
+        <Route path="/Corredor" element={<Corredor className="imagen-size" />}/>
+        <Route path="/Correr" element={<Correr className="imagen-size" />}/>
+        <Route path="/Images" element={<Images className="imagen-size" />}/>
       </Routes>
       <Navigation />
     </Router>
